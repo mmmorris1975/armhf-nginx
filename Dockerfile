@@ -1,4 +1,5 @@
-FROM hypriot/rpi-alpine-scratch:v3.4
+# A much thinner image than the "official" arm32v7 nginx image (alpine vs debian)
+FROM arm32v6/alpine:3.6
 MAINTAINER Mike Morris
 
 RUN apk update && \
